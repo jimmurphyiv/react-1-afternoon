@@ -7,8 +7,8 @@ export default class EvenAndOdd extends Component {
     super();
 
     this.state = {
-        evenArray: [],
-        oddArray: [],
+        evenArr: [],
+        oddArr: [],
         userInput: ''
     }
 }
@@ -25,12 +25,12 @@ makeEvenAndOdds(userInput) {
 for (let i = 0; i < arr.length; i++){
     if (arr[i] % 2 === 0) {
         evens.push(arr[i]);
-    }else{
+    }else {
         odds.push(arr[i]);
+        }
     }
-}
 
-    this.setState({ evenArray: evens, oddArray: odds});
+    this.setState({ evenArr: evens, oddArr: odds});
 }
 
 
@@ -40,8 +40,8 @@ for (let i = 0; i < arr.length; i++){
                 <h4> "Even and Odds" </h4> 
                 <input className='inputLine' onChange={ (e) => this.updateChange(e.target.value)}/>
                 <button className='confirmationButton'onClick={ () => { this.makeEvenAndOdds(this.userInput)}}> Split </button>
-                <span className='resultsBox'> Evens:{JSON.stringify(this.state.evenArray)} </span>
-                <span className='resultsBox'> Odds:{JSON.stringify(this.state.oddArray)}</span>
+                <span className='resultsBox'> Evens:{JSON.stringify(this.state.evenArr)} </span>
+                <span className='resultsBox'> Odds:{JSON.stringify(this.state.oddArr)}</span>
             </div>
         )
     }

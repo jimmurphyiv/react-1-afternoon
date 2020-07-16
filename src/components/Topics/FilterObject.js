@@ -8,18 +8,20 @@ export default class FilterObject extends Component {
     this.state = {
       employees: [
         {
-          name: 'Jimmy Joe',
-          title: 'Hack0r',
-          age: 12,
+          name: 'Derk Diggler',
+          title: 'Boss',
+          age: 34,
         },
         {
-          name: 'Jeremy Schrader',
-          age: 24,
-          hairColor: 'brown'
+          name: 'Jerry Thom',
+          title: 'Janitor',
+          age: 58,
+          
         },
         {
-          name: 'Carly Armstrong',
-          title: 'CEO',
+          name: 'Reed Cliner',
+          title: 'Chairholder',
+          age: 60,
         }
       ],
 
